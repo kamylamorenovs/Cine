@@ -1,4 +1,4 @@
-# API del Cine (e-actividad 1.1)
+#  Cine 
 
 ## Instalar y ejecutar
 1. Instalar Node.js.
@@ -16,16 +16,15 @@ Los datos viven en variables (`data/datos.js`) y se reinician al apagar el servi
 
 ## Endpoints (todos responden `{ data, message }`)
 | Método | Ruta | Acción |
-|---|---|---|
-| GET | /peliculas/all, /salas/all, /funciones/all, /reservaciones/all, /tickets/all | Listar |
-| GET | /{entidad}/:id | Ver por id |
-| GET | /peliculas/ultimas | Últimas 5 películas por fecha de estreno |
-| GET | /funciones/rango?desde=2026-10-01&hasta=2026-10-31 | Funciones en un rango de fechas |
-| GET | /reservaciones/:id/tickets | Tickets de una reservación |
-| POST | /{entidad}/create | Crear (datos en el body JSON) |
-| PUT | /{entidad}/:id | Editar |
-| DELETE | /{entidad}/:id | Eliminar |
-| DELETE | /tickets/:id/reservacion | Quitar la relación ticket-reservación |
+GET | /peliculas/all, /salas/all, /funciones/all, /reservaciones/all, /tickets/all | Listar |
+GET | /{entidad}/:id | Ver por id |
+GET | /peliculas/ultimas | Últimas 5 películas por fecha de estreno |
+GET | /funciones/rango?desde=2026-10-01&hasta=2026-10-31 | Funciones en un rango de fechas |
+GET | /reservaciones/:id/tickets | Tickets de una reservación |
+POST | /{entidad}/create | Crear (datos en el body JSON) |
+PUT | /{entidad}/:id | Editar |
+DELETE | /{entidad}/:id | Eliminar |
+DELETE | /tickets/:id/reservacion | Quitar la relación ticket-reservación |
 
 `{entidad}` = peliculas, salas, funciones, reservaciones o tickets.
 
