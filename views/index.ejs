@@ -1,0 +1,11 @@
+<%- include('partials/cabecera', { titulo }) %>
+<h1>Cartelera y reservas</h1>
+<p>Panel del cine. Las rutas de la API (GET, POST, PUT y DELETE) se prueban con Thunder Client.</p>
+<ul class="resumen">
+  <li><a href="/vistas/peliculas"><strong><%= totales.peliculas %></strong> películas</a></li>
+  <li><a href="/vistas/salas"><strong><%= totales.salas %></strong> salas</a></li>
+  <li><a href="/vistas/funciones"><strong><%= totales.funciones %></strong> funciones</a></li>
+  <li><a href="/vistas/reservaciones"><strong><%= totales.reservaciones %></strong> reservaciones</a></li>
+  <li><strong><%= totales.tickets %></strong> tickets</li>
+</ul>
+<%- include('partials/pie') %>

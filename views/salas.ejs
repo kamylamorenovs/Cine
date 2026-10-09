@@ -1,0 +1,13 @@
+<%- include('partials/cabecera', { titulo }) %>
+<h1>Salas</h1>
+<% if (salas.length === 0) { %>
+  <p>No hay salas registradas. Agrégalas con POST /salas/create.</p>
+<% } else { %>
+<table>
+  <tr><th>ID</th><th>Nombre</th><th>Capacidad</th><th>Tipo</th></tr>
+  <% salas.forEach((s) => { %>
+  <tr><td><%= s.id %></td><td><%= s.nombre %></td><td><%= s.capacidad %></td><td><%= s.tipo %></td></tr>
+  <% }) %>
+</table>
+<% } %>
+<%- include('partials/pie') %>

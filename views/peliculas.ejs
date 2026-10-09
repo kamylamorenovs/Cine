@@ -1,0 +1,13 @@
+<%- include('partials/cabecera', { titulo }) %>
+<h1>Películas</h1>
+<% if (peliculas.length === 0) { %>
+  <p>No hay películas registradas. Agrégalas con POST /peliculas/create.</p>
+<% } else { %>
+<table>
+  <tr><th>ID</th><th>Título</th><th>Género</th><th>Duración (min)</th><th>Estreno</th></tr>
+  <% peliculas.forEach((p) => { %>
+  <tr><td><%= p.id %></td><td><%= p.titulo %></td><td><%= p.genero %></td><td><%= p.duracion %></td><td><%= p.fechaEstreno %></td></tr>
+  <% }) %>
+</table>
+<% } %>
+<%- include('partials/pie') %>

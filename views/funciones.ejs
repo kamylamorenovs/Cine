@@ -1,0 +1,16 @@
+<%- include('partials/cabecera', { titulo }) %>
+<h1>Funciones</h1>
+<% if (funciones.length === 0) { %>
+  <p>No hay funciones registradas. Agrégalas con POST /funciones/create.</p>
+<% } else { %>
+<table>
+  <tr><th>ID</th><th>Película (id)</th><th>Sala (id)</th><th>Fecha</th><th>Hora</th><th>Precio</th></tr>
+  <% funciones.forEach((f) => { %>
+  <tr><td><%= f.id %></td><td><%= f.peliculaId %></td>
+    <td><%= f.salaId %></td>
+    <td><%= f.fecha %></td><td><%= f.hora %></td><td>$<%= f.precio %></td>
+  </tr>
+  <% }) %>
+</table>
+<% } %>
+<%- include('partials/pie') %>
