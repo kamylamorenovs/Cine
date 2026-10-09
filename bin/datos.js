@@ -3,6 +3,11 @@ export const peliculas = [
   { id: 1, titulo: 'Interestelar', genero: 'Ciencia ficción', duracion: 169, fechaEstreno: '2014-11-07' },
   { id: 2, titulo: 'Coco', genero: 'Animación', duracion: 105, fechaEstreno: '2017-11-22' },
   { id: 3, titulo: 'Oppenheimer', genero: 'Drama', duracion: 180, fechaEstreno: '2023-07-21' },
+  { id: 4, titulo: 'Spider-Man: Un nuevo universo', genero: 'Animación', duracion: 117, fechaEstreno: '2018-12-14' },
+  { id: 5, titulo: 'Mad Max: Furia en el camino', genero: 'Acción', duracion: 120, fechaEstreno: '2015-05-15' },
+  { id: 6, titulo: 'Parásitos', genero: 'Suspenso', duracion: 132, fechaEstreno: '2019-05-30' },
+  { id: 7, titulo: 'Dune: Parte dos', genero: 'Ciencia ficción', duracion: 166, fechaEstreno: '2024-03-01' },
+  { id: 8, titulo: 'Intensamente 2', genero: 'Animación', duracion: 96, fechaEstreno: '2024-06-14' },
 ];
 
 export const salas = [

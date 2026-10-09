@@ -1,11 +1,18 @@
 <%- include('partials/cabecera', { titulo }) %>
-<h1>Cartelera y reservas</h1>
-<p>Panel del cine. Las rutas de la API (GET, POST, PUT y DELETE) se prueban con Thunder Client.</p>
+<section class="hero">
+  <p class="sobre">Cartelera y reservas</p>
+  <h1>Vive el cine en pantalla grande</h1>
+  <p class="texto">Consulta las películas, salas, funciones y reservaciones del cine.</p>
+  <div class="acciones">
+    <a class="boton" href="/vistas/peliculas">Ver películas</a>
+    <a class="boton secundario" href="/vistas/funciones">Ver funciones</a>
+  </div>
+</section>
 <ul class="resumen">
-  <li><a href="/vistas/peliculas"><strong><%= totales.peliculas %></strong> películas</a></li>
-  <li><a href="/vistas/salas"><strong><%= totales.salas %></strong> salas</a></li>
-  <li><a href="/vistas/funciones"><strong><%= totales.funciones %></strong> funciones</a></li>
-  <li><a href="/vistas/reservaciones"><strong><%= totales.reservaciones %></strong> reservaciones</a></li>
-  <li><strong><%= totales.tickets %></strong> tickets</li>
+  <li><a href="/vistas/peliculas"><strong><%= totales.peliculas %></strong><span>películas</span></a></li>
+  <li><a href="/vistas/salas"><strong><%= totales.salas %></strong><span>salas</span></a></li>
+  <li><a href="/vistas/funciones"><strong><%= totales.funciones %></strong><span>funciones</span></a></li>
+  <li><a href="/vistas/reservaciones"><strong><%= totales.reservaciones %></strong><span>reservaciones</span></a></li>
+  <li><div><strong><%= totales.tickets %></strong><span>tickets</span></div></li>
 </ul>
 <%- include('partials/pie') %>
